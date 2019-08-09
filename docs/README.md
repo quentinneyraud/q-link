@@ -60,8 +60,8 @@ npm run build-bundle
 > 
 > `internal`: Basic nuxt-link  
 > `external`: Bascic link with `target="_blank"`  
-> `email`: mailto link (use no-ssr to prevent crawling)
-> `tel`: tel link (use no-ssr to prevent crawling)
+> `email`: mailto link (use no-ssr to prevent crawling)  
+> `tel`: tel link (use no-ssr to prevent crawling)  
 > `prevented` Basic link with click prevented and propagation stopped
 
 **Type**: String   
