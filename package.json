@@ -2,6 +2,11 @@
   "name": "@qneyraud/q-link",
   "version": "1.0.0",
   "main": "./dist/QLink.common.js",
+  "description": "Vue component for links",
+  "keywords": [
+    "nuxt",
+    "link"
+  ],
   "files": [
     "dist/*",
     "src/components/*",
