@@ -17,7 +17,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name QLink ./src/components/QLink.vue",
+    "build-bundle": "npm run lint && vue-cli-service build --target lib --name QLink ./src/components/QLink.vue",
     "lint": "vue-cli-service lint",
     "prepublish": "npm run build-bundle",
     "docs": "docsify serve ./docs"
@@ -34,8 +34,6 @@
     "docsify-cli": "^4.3.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {

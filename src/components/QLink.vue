@@ -118,9 +118,10 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-  a
-    display inline-block
-    width 100%
-    height 100%
+<style>
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
 </style>
