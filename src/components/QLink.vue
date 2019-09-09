@@ -84,7 +84,7 @@ export default {
       default: ''
     },
     to: {
-      type: String,
+      type: [String, Object],
       required: false,
       default: '#'
     },
