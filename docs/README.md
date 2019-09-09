@@ -1,5 +1,7 @@
 # Introduction
 
+Nuxt component for links
+
 ## Install
 
 ```bash

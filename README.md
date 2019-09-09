@@ -1,5 +1,7 @@
 # q-link
 
+Nuxt component for links
+
 > [Documentation](https://quentinneyraud.github.io/q-link/)
 
 
