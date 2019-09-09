@@ -1,6 +1,6 @@
 {
   "name": "@qneyraud/q-link",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/QLink.common.js",
   "description": "Vue component for links",
   "keywords": [
