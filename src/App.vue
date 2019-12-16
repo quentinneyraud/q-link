@@ -1,45 +1,37 @@
 <template>
   <div id="app">
     <!-- Internal -->
-    <q-link
-      class="app-link"
-      v-bind="link1">
+    <q-link v-bind="link1" class="app-link">
       My link
     </q-link>
 
     <!-- Internal - force reload -->
-    <q-link
-      class="app-link"
-      v-bind="link2">
+    <q-link v-bind="link2" class="app-link">
       My link
     </q-link>
 
     <!-- External -->
-    <q-link
-      class="app-link"
-      v-bind="link3">
+    <q-link v-bind="link3" class="app-link">
       My link
     </q-link>
 
     <!-- Email -->
-    <q-link
-      class="app-link"
-      v-bind="link4">
+    <q-link v-bind="link4" class="app-link">
       My link
     </q-link>
 
     <!-- Tel -->
-    <q-link
-      class="app-link"
-      v-bind="link5">
+    <q-link v-bind="link5" class="app-link">
+      My link
+    </q-link>
+
+    <!-- Tel -->
+    <q-link v-bind="link6" class="app-link">
       My link
     </q-link>
 
     <!-- Prevented -->
-    <q-link
-      class="app-link"
-      v-bind="link6"
-      @click="onModalClick">
+    <q-link v-bind="link7" @click="onModalClick" class="app-link">
       My link
     </q-link>
   </div>
@@ -49,7 +41,7 @@
 import QLink from './components/QLink.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     QLink
   },
@@ -82,9 +74,14 @@ export default {
         title: 'Call 911'
       },
       link6: {
+        type: 'place',
+        place: '9, quai André Lassagne',
+        title: 'Go to Akaru'
+      },
+      link7: {
         type: 'prevented',
         title: 'Open this modal'
-      },
+      }
     }
   },
   methods: {
@@ -95,14 +92,13 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-  html, body
-    margin 0
-    padding 0
-</style>
-
-<style lang="stylus" scoped>
-.app-link
-  width 100px
-  height 50px
+<style scoped>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  .app-link {
+    width: 100px;
+    height: 50px;
+  }
 </style>

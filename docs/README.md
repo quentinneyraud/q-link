@@ -45,14 +45,7 @@ npm run serve
 npm run build-bundle
 ```
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div style="margin-top:200px"></div>
 
 # Options
 
@@ -61,9 +54,10 @@ npm run build-bundle
 > Define behavior of the link 
 > 
 > `internal`: Basic nuxt-link  
-> `external`: Bascic link with `target="_blank"`  
+> `external`: Basic link with `target="_blank"`  
 > `email`: mailto link (use no-ssr to prevent crawling)  
 > `tel`: tel link (use no-ssr to prevent crawling)  
+> `place` will open `https://www.google.com/maps/search/?api=1&query=` with `place` property in query
 > `prevented` Basic link with click prevented and propagation stopped
 
 **Type**: String   
@@ -110,14 +104,15 @@ npm run build-bundle
 **Required**: false   
 **Default**: null 
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+## place
+
+> place passed in google maps query if `type` is `place`
+
+**Type**: String   
+**Required**: false   
+**Default**: null 
+
+<div style="margin-top:200px"></div>
 
 
 # Events
@@ -128,14 +123,7 @@ npm run build-bundle
 
 **Parameter**: MouseEvent
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div style="margin-top:200px"></div>
 
 # Examples
 
@@ -187,6 +175,16 @@ npm run build-bundle
   type="tel"
   tel="911"
   title="Call 911">
+</q-link>
+```
+
+## Place link
+
+```vue
+<q-link 
+  type="place"
+  place="9, quai André Lassagne"
+  title="Go to office">
 </q-link>
 ```
 
