@@ -98,7 +98,7 @@ export default {
       }
 
       if (this.type === 'tel') {
-        return 'tel:' + this.tel
+        return 'tel:' + this.tel.replace(/\s/g, '')
       }
 
       if (this.type === 'place') {
